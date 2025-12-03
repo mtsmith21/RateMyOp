@@ -198,22 +198,6 @@
     "typescript": "^5"
   }
 }
-<!-- 
-[STUDIO-ASSIST]
-This is a helper block that will be automatically removed when you export your project.
-
-**To copy this file's content, click the button below.**
-
-[COPY_FILE_CONTENT]
--->
-/* 
-[STUDIO-ASSIST]
-This is a helper block that will be automatically removed when you export your project.
-
-**To copy this file's content, click the button below.**
-
-[COPY_FILE_CONTENT]
-*/
 import type {Config} from 'tailwindcss';
 
 export default {
@@ -313,27 +297,13 @@ export default {
   },
   plugins: [require('tailwindcss-animate')],
 } satisfies Config;
-/* 
-[STUDIO-ASSIST]
-This is a helper block that will be automatically removed when you export your project.
-
-**To copy this file's content, click the button below.**
-
-[COPY_FILE_CONTENT]
-*/
+/
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
-}/* 
-[STUDIO-ASSIST]
-This is a helper block that will be automatically removed when you export your project.
-
-**To copy this file's content, click the button below.**
-
-[COPY_FILE_CONTENT]
-*/
+}
 export type Review = {
   id: string;
   author: string;
@@ -358,15 +328,7 @@ export type Operator = {
   fleetSize: number;
   website: string;
   reviews: Review[];
-};
-/* 
-[STUDIO-ASSIST]
-This is a helper block that will be automatically removed when you export your project.
-
-**To copy this file's content, click the button below.**
-
-[COPY_FILE_CONTENT]
-*/
+}
 import data from './placeholder-images.json';
 
 export type ImagePlaceholder = {
@@ -533,8 +495,7 @@ const operatorsData: Omit<Operator, 'reviews'>[] = [
     hq: 'Las Vegas, NV, USA',
     fleetSize: 40,
     website: 'https://www.flythrive.com/',
-  },
-];
+  }
 
 const allOperators: Operator[] = operatorsData.map(op => ({
   ...op,
